@@ -1,0 +1,57 @@
+
+{
+  "name": "eslint-plugin-vue-type-assertion-parens",
+  "version": "1.0.0",
+  "description": "ESLint plugin to enforce parentheses around TypeScript type assertions in Vue templates",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "vue",
+    "typescript",
+    "type-assertion",
+    "template",
+    "linting"
+  ],
+  "author": "Štěpán Rožník stepan@roznik.cz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stepanroznik/eslint-plugin-vue-type-assertion-parens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stepanroznik/eslint-plugin-vue-type-assertion-parens/issues"
+  },
+  "homepage": "https://github.com/stepanroznik/eslint-plugin-vue-type-assertion-parens#readme",
+  "peerDependencies": {
+    "eslint": ">=7.0.0",
+    "eslint-plugin-vue": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.20.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
