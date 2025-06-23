@@ -60,31 +60,7 @@ module.exports = {
 
 This rule enforces that TypeScript type assertions in Vue templates are wrapped in parentheses.
 
-### Examples
-
-**❌ Incorrect:**
-```vue
-<template>
-  <div>
-    <input :value="data as string" />
-    <MyComponent @click="handler($event as MouseEvent)" />
-  </div>
-</template>
-```
-
-**✅ Correct:**
-```vue
-<template>
-  <div>
-    <input :value="(data as string)" />
-    <MyComponent @click="handler(($event as MouseEvent))" />
-  </div>
-</template>
-```
-
-### Chained Type Assertions
-
-The rule correctly handles chained type assertions:
+### Example
 
 **❌ Incorrect:**
 ```vue
